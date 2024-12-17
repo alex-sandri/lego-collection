@@ -7,6 +7,7 @@ name = "pypi"
 view = "python main.py"
 
 [packages]
+prettytable = "==3.12.0"
 
 [dev-packages]
 
