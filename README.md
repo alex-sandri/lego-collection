@@ -1,2 +1,3 @@
-# lego-collection
- My LEGO collection.
+# My LEGO collection
+
+<!-- PLACEHOLDER -->

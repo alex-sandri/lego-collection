@@ -1,0 +1,75 @@
+{
+  "$schema": "./schema.json",
+  "sets": [
+    {
+      "id": 60362,
+      "info": {
+        "theme": "City",
+        "name": "Autolavaggio",
+        "pieces": 243
+      },
+      "price": {
+        "paid": 17.44,
+        "full": 19.99
+      },
+      "boughtAt": "2024-08-12",
+      "budgetedFor": "2024-07"
+    },
+    {
+      "id": 60363,
+      "info": {
+        "theme": "City",
+        "name": "Gelateria",
+        "pieces": 296
+      },
+      "price": {
+        "paid": 28.69,
+        "full": 34.99
+      },
+      "boughtAt": "2024-08-12",
+      "budgetedFor": "2024-07"
+    },
+    {
+      "id": 10312,
+      "info": {
+        "theme": "Icons",
+        "name": "Jazz Club",
+        "pieces": 2899
+      },
+      "price": {
+        "paid": 183.99,
+        "full": 229.99
+      },
+      "boughtAt": "2024-08-26",
+      "budgetedFor": "2024-08"
+    },
+    {
+      "id": 60423,
+      "info": {
+        "theme": "City",
+        "name": "Tram e fermata del tram",
+        "pieces": 811
+      },
+      "price": {
+        "paid": 67.49,
+        "full": 89.99
+      },
+      "boughtAt": "2024-08-26",
+      "budgetedFor": "2024-08"
+    },
+    {
+      "id": 31153,
+      "info": {
+        "theme": "Creator 3-in-1",
+        "name": "Casa moderna",
+        "pieces": 939
+      },
+      "price": {
+        "paid": 64.99,
+        "full": 99.99
+      },
+      "boughtAt": "2024-08-27",
+      "budgetedFor": "2024-08"
+    }
+  ]
+}
