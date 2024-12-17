@@ -182,6 +182,90 @@
       },
       "boughtAt": "2024-12-07",
       "budgetedFor": "2024-11"
+    },
+    {
+      "id": 21339,
+      "info": {
+        "theme": "Ideas",
+        "name": "BTS Dynamite",
+        "pieces": 749
+      },
+      "price": {
+        "paid": 59.99,
+        "full": 99.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
+    },
+    {
+      "id": 60304,
+      "info": {
+        "theme": "City",
+        "name": "Piattaforme stradali",
+        "pieces": 112
+      },
+      "price": {
+        "paid": 14.99,
+        "full": 19.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
+    },
+    {
+      "id": 40702,
+      "info": {
+        "theme": "Gift with purchase",
+        "name": "Cornice natalizia",
+        "pieces": 209
+      },
+      "price": {
+        "paid": 0,
+        "full": 14.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
+    },
+    {
+      "id": 60372,
+      "info": {
+        "theme": "City",
+        "name": "Accademia di addestramento della polizia",
+        "pieces": 823
+      },
+      "price": {
+        "paid": 67.49,
+        "full": 89.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
+    },
+    {
+      "id": 60364,
+      "info": {
+        "theme": "City",
+        "name": "Skate Park urbano",
+        "pieces": 454
+      },
+      "price": {
+        "paid": 41.24,
+        "full": 54.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
+    },
+    {
+      "id": 60404,
+      "info": {
+        "theme": "City",
+        "name": "Furgone degli hamburger",
+        "pieces": 194
+      },
+      "price": {
+        "paid": 15,
+        "full": 19.99
+      },
+      "boughtAt": "2024-12-15",
+      "budgetedFor": "2024-12"
     }
   ]
 }
