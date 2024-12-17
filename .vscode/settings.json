@@ -1,0 +1,6 @@
+{
+  "[python]": {
+    "editor.indentSize": 4,
+    "editor.detectIndentation": false
+  }
+}
