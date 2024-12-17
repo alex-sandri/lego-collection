@@ -112,6 +112,76 @@
       },
       "boughtAt": "2024-11-09",
       "budgetedFor": "2024-10"
+    },
+    {
+      "id": 10311,
+      "info": {
+        "theme": "Botanical Collection",
+        "name": "Orchidea",
+        "pieces": 608
+      },
+      "price": {
+        "paid": 34.99,
+        "full": 49.99
+      },
+      "boughtAt": "2024-12-01",
+      "budgetedFor": "2024-11"
+    },
+    {
+      "id": 60384,
+      "info": {
+        "theme": "City",
+        "name": "Il furgoncino delle granite del pinguino",
+        "pieces": 194
+      },
+      "price": {
+        "paid": 13.99,
+        "full": 19.99
+      },
+      "boughtAt": "2024-12-01",
+      "budgetedFor": "2024-11"
+    },
+    {
+      "id": 60365,
+      "info": {
+        "theme": "City",
+        "name": "Condomini",
+        "pieces": 688
+      },
+      "price": {
+        "paid": 47.59,
+        "full": 84.99
+      },
+      "boughtAt": "2024-12-02",
+      "budgetedFor": "2024-11"
+    },
+    {
+      "id": 21349,
+      "info": {
+        "theme": "Ideas",
+        "name": "Gatto Tuxedo",
+        "pieces": 1719
+      },
+      "price": {
+        "paid": 80.76,
+        "full": 99.99
+      },
+      "boughtAt": "2024-12-07",
+      "budgetedFor": "2024-11"
+    },
+    {
+      "id": 10369,
+      "info": {
+        "theme": "Botanical Collection",
+        "name": "Albicocco giapponese",
+        "pieces": 327
+      },
+      "price": {
+        "paid": 24.22,
+        "full": 29.99
+      },
+      "boughtAt": "2024-12-07",
+      "budgetedFor": "2024-11"
     }
   ]
 }
