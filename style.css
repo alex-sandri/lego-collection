@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --table-cell-padding: 0.5em
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+#stats {
+  table {
+    width: max-content;
+  }
+
+  +hr {
+    border: none;
+    margin: 1em 0;
+    height: 0.2em;
+    background-color: black;
+  }
+}
+
+section {
+  overflow: auto;
+
+  &.month {
+    >h2 {
+      margin-top: 0;
+    }
+
+    +section.month {
+      margin-top: 1em;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    background-color: lightgray;
+  }
+
+  th,
+  td {
+    border: 1px solid gray;
+    padding: var(--table-cell-padding);
+  }
+
+  th {
+    &.tc-w-3 {
+      width: 3ch;
+    }
+
+    &.tc-w-4 {
+      width: 4ch;
+    }
+
+    &.tc-w-5 {
+      width: 5ch;
+    }
+
+    &.tc-w-6 {
+      width: 6ch;
+    }
+
+    &.tc-w-8 {
+      width: 8ch;
+    }
+
+    &.tc-w-20 {
+      width: 20ch;
+    }
+  }
+}

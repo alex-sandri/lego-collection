@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La mia collezione LEGO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>La mia collezione LEGO</h1>
+  </header>
+  <main>
+    <section id="stats">
+      <h2>Statistiche</h2>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" class="tc-w-3">Set</th>
+            <th rowspan="2" class="tc-w-6">Pezzi</th>
+            <th colspan="3">Prezzo</th>
+            <th colspan="2">Risparmio</th>
+          </tr>
+          <tr>
+            <th>Pagato</th>
+            <th>Listino</th>
+            <th class="tc-w-6">/ pz</th>
+            <th>€</th>
+            <th class="tc-w-4">%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ stats.count }}</td>
+            <td>{{ stats.pieces }}</td>
+            <td>{{ stats.pricePaid }}</td>
+            <td>{{ stats.fullPrice }}</td>
+            <td>{{ stats.pricePerPiece }}</td>
+            <td>{{ stats.savings }}</td>
+            <td>{{ stats.savingsPercentage }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    {% for month, sets in months.items() %}
+    <section class="month">
+      <small>Stipendio di</small>
+      <h2>{{ month }}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" class="tc-w-5">#</th>
+            <th rowspan="2" class="tc-w-8">Data</th>
+            <th colspan="3">Set</th>
+            <th colspan="3">Prezzo</th>
+            <th colspan="2">Risparmio</th>
+          </tr>
+          <tr>
+            <th class="tc-w-20">Tema</th>
+            <th>Nome</th>
+            <th class="tc-w-5">Pezzi</th>
+            <th class="tc-w-8">Pagato</th>
+            <th class="tc-w-8">Listino</th>
+            <th class="tc-w-6">/ pz</th>
+            <th class="tc-w-8">€</th>
+            <th class="tc-w-4">%</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for set in sets %}
+          <tr>
+            <td>{{ set.id }}</td>
+            <td>{{ set.boughtAt }}</td>
+            <td>{{ set.theme }}</td>
+            <td>{{ set.name }}</td>
+            <td>{{ set.pieces }}</td>
+            <td>{{ set.pricePaid }}</td>
+            <td>{{ set.fullPrice }}</td>
+            <td>{{ set.pricePerPiece }}</td>
+            <td>{{ set.savings }}</td>
+            <td>{{ set.savingsPercentage }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endfor %}
+  </main>
+</body>
+
+</html>
