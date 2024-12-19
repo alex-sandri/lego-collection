@@ -1,3 +1,0 @@
-# My LEGO collection
-
-<!-- PLACEHOLDER -->
