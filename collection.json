@@ -266,6 +266,20 @@
       },
       "boughtAt": "2024-12-15",
       "budgetedFor": "2024-12"
+    },
+    {
+      "id": 75398,
+      "info": {
+        "theme": "Star Wars",
+        "name": "C-3PO™",
+        "pieces": 1138
+      },
+      "price": {
+        "paid": 90.68,
+        "full": 139.99
+      },
+      "boughtAt": "2024-12-30",
+      "budgetedFor": "2024-12"
     }
   ]
 }
