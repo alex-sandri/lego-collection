@@ -47,11 +47,11 @@
 
     <hr>
 
-    {% for month, sets in months.items() %}
+    {% for month in months %}
     <section class="month">
       <small>Stipendio di</small>
-      <h2>{{ month }}</h2>
-      <table>
+      <h2>{{ month.id }}</h2>
+      <table class="sets">
         <thead>
           <tr>
             <th rowspan="2" class="tc-w-5">#</th>
@@ -72,7 +72,7 @@
           </tr>
         </thead>
         <tbody>
-          {% for set in sets %}
+          {% for set in month.sets %}
           <tr>
             <td>{{ set.id }}</td>
             <td>{{ set.boughtAt }}</td>
@@ -86,6 +86,37 @@
             <td>{{ set.savingsPercentage }}</td>
           </tr>
           {% endfor %}
+        </tbody>
+      </table>
+
+      <h3>Statistiche</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" class="tc-w-3">Set</th>
+            <th rowspan="2" class="tc-w-6">Pezzi</th>
+            <th colspan="3">Prezzo</th>
+            <th colspan="2">Risparmio</th>
+          </tr>
+          <tr>
+            <th>Pagato</th>
+            <th>Listino</th>
+            <th class="tc-w-6">/ pz</th>
+            <th>€</th>
+            <th class="tc-w-4">%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ month.formatted_stats.count }}</td>
+            <td>{{ month.formatted_stats.pieces }}</td>
+            <td>{{ month.formatted_stats.pricePaid }}</td>
+            <td>{{ month.formatted_stats.fullPrice }}</td>
+            <td>{{ month.formatted_stats.pricePerPiece }}</td>
+            <td>{{ month.formatted_stats.savings }}</td>
+            <td>{{ month.formatted_stats.savingsPercentage }}</td>
+          </tr>
         </tbody>
       </table>
     </section>

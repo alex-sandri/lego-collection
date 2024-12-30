@@ -5,6 +5,9 @@ from os import path
 
 import jinja2
 
+from models.month import Month
+from utils.format_currency import format_currency
+
 locale.setlocale(locale.LC_ALL, 'it_IT')
 
 PROJECT_PATH = path.normpath(path.join(__file__, '..'))
@@ -22,11 +25,7 @@ stats = dict[str, float]({
     'savings': 0,
 })
 
-months = dict[str, list[dict[str, str]()]()]()
-
-
-def format_currency(value: float) -> str:
-    return '€ {:,.2f}'.format(value)
+months = list[Month]()
 
 
 with open(path.normpath(COLLECTION_FILE_PATH)) as file:
@@ -34,35 +33,34 @@ with open(path.normpath(COLLECTION_FILE_PATH)) as file:
         stats['count'] += 1
 
         pieces = set['info']['pieces']
-        pricePaid = set['price']['paid']
-        fullPrice = set['price']['full']
-        boughtAt = datetime.date.fromisoformat(set['boughtAt'])
-        budgetedFor = datetime.date.fromisoformat(
+        price_paid = set['price']['paid']
+        full_price = set['price']['full']
+        bought_at = datetime.date.fromisoformat(set['boughtAt'])
+        budgeted_for = datetime.date.fromisoformat(
             f'{set['budgetedFor']}-01',
         ).strftime('%B %Y')
 
-        savings = round(fullPrice - pricePaid, 2)
+        savings = round(full_price - price_paid, 2)
 
         stats['pieces'] += pieces
-        stats['pricePaid'] += pricePaid
-        stats['fullPrice'] += fullPrice
+        stats['pricePaid'] += price_paid
+        stats['fullPrice'] += full_price
         stats['savings'] += savings
 
-        if budgetedFor not in months:
-            months[budgetedFor] = []
+        if not any(month.id == budgeted_for for month in months):
+            months.append(Month(budgeted_for))
 
-        months[budgetedFor].append({
-            'id': set['id'],
-            'theme': set['info']['theme'],
-            'name': set['info']['name'],
-            'pieces': pieces,
-            'pricePaid': format_currency(pricePaid),
-            'fullPrice': format_currency(fullPrice),
-            'pricePerPiece': format_currency(pricePaid / pieces),
-            'savings': format_currency(savings),
-            'savingsPercentage': f'{round(savings * 100 / fullPrice)}%',
-            'boughtAt': boughtAt.strftime('%d/%m/%Y'),
-        })
+        month = list(filter(lambda m: m.id == budgeted_for, months))[0]
+
+        month.add_set(
+            id=set['id'],
+            theme=set['info']['theme'],
+            name=set['info']['name'],
+            pieces=pieces,
+            price_paid=price_paid,
+            full_price=full_price,
+            bought_at=bought_at,
+        )
 
 formattedStats = {
     'count': str(stats['count']),
