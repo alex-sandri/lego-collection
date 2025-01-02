@@ -142,20 +142,6 @@
       "budgetedFor": "2024-11"
     },
     {
-      "id": 60365,
-      "info": {
-        "theme": "City",
-        "name": "Condomini",
-        "pieces": 688
-      },
-      "price": {
-        "paid": 47.59,
-        "full": 84.99
-      },
-      "boughtAt": "2024-12-02",
-      "budgetedFor": "2024-11"
-    },
-    {
       "id": 21349,
       "info": {
         "theme": "Ideas",
