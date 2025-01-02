@@ -74,7 +74,12 @@
         <tbody>
           {% for set in month.sets %}
           <tr>
-            <td>{{ set.id }}</td>
+            <td>
+              <a href="https://www.lego.com/it-it/search?q={{ set.id }}"
+                target="_blank">
+                {{ set.id }}
+              </a>
+            </td>
             <td>{{ set.boughtAt }}</td>
             <td>{{ set.theme }}</td>
             <td>{{ set.name }}</td>
