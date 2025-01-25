@@ -17,6 +17,7 @@
               "theme": {
                 "type": "string",
                 "enum": [
+                  "Art",
                   "Botanical Collection",
                   "City",
                   "Creator 3-in-1",

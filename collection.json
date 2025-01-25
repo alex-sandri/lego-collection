@@ -266,6 +266,34 @@
       },
       "boughtAt": "2024-12-30",
       "budgetedFor": "2024-12"
+    },
+    {
+      "id": 10368,
+      "info": {
+        "theme": "Botanical Collection",
+        "name": "Crisantemo",
+        "pieces": 278
+      },
+      "price": {
+        "paid": 18.49,
+        "full": 29.99
+      },
+      "boughtAt": "2025-01-25",
+      "budgetedFor": "2025-01"
+    },
+    {
+      "id": 31208,
+      "info": {
+        "theme": "Art",
+        "name": "Hokusai - La Grande Onda",
+        "pieces": 1810
+      },
+      "price": {
+        "paid": 74.49,
+        "full": 99.99
+      },
+      "boughtAt": "2025-01-25",
+      "budgetedFor": "2025-01"
     }
   ]
 }
