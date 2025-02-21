@@ -294,6 +294,34 @@
       },
       "boughtAt": "2025-01-25",
       "budgetedFor": "2025-01"
+    },
+    {
+      "id": 10344,
+      "info": {
+        "theme": "Botanical Collection",
+        "name": "Bambù del buon auspicio",
+        "pieces": 325
+      },
+      "price": {
+        "paid": 20.99,
+        "full": 29.99
+      },
+      "boughtAt": "2025-02-21",
+      "budgetedFor": "2025-02"
+    },
+    {
+      "id": 10334,
+      "info": {
+        "theme": "Icons",
+        "name": "Radio vintage",
+        "pieces": 906
+      },
+      "price": {
+        "paid": 73.49,
+        "full": 99.99
+      },
+      "boughtAt": "2025-02-21",
+      "budgetedFor": "2025-02"
     }
   ]
 }
